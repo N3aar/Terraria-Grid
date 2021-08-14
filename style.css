@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Andy';
+  src: url('./andy.ttf') format("ttf");
+}
+
+body {
+  background-image: url(./background.jpg);
+  background-color: #cccccc;
+}
+
+#top {
+  width: 282px;
+  height: 41px;
+  margin: 5px auto 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#canvas {
+  border: 15px solid rgba(31, 16, 66, .8);
+  border-radius: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline-panel {
+  flex-direction: column;
+  background-color: rgba(31, 16, 66, .8);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.panel {
+  flex-direction: column;
+  background-color: rgba(57, 56, 135, .6);
+  border-radius: 10px;
+}
+
+#container {
+  width: 380px;
+  height: 190px;
+  margin: 15px auto;
+}
+
+#menu {
+  width: 345px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.text {
+  color: #808181;
+  font-family: Andy;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-text-stroke: 1px black;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.option {
+  margin: 5px;
+  padding: 0;
+}
+
+.color-white, .option:hover {
+  color: white;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 8px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  outline: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 7px;
+  height: 20px;
+  background: #FFFFFF;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+.slider:hover {
+  border: 2px solid yellow;
+}
+
+.button {
+  background: none;
+  margin: 5px 15px 5px 0px;
+}
+
+.button:hover {
+  font-size: 27px;
+  color: yellow;
+}
+
+.footer-text {
+  color: white;
+  font-size: 19px;
+  -webkit-text-stroke: 0.3px black;
+  cursor: default;
+}
+
+.url {
+  color: yellow;
+  cursor: pointer;
+}
+
+#footer-panel {
+  padding: 10px;
+}
+
+#info {
+  color: #a7a7a7;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 20px;
+  font-style: bold;
+  cursor: default;
+}
+
+footer {
+  width: 530px;
+  height: 70px;
+  margin: 0 auto;
+}

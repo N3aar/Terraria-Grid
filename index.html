@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terraria Grid</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Tavares">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Terraria, Tools, Grid">
+    <meta property="og:title" content="Terraria Grid">
+    <meta property="og:image" content="https://vnear.github.io/Terraria-Grid/logo.png">
+    <meta property="twitter:image" content="https://vnear.github.io/Terraria-Grid/logo.png">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="top">
+        <a href="/"><img src="./logo.png" alt="Terraria Grid"></a>
+      </div>
+    </header>
+
+    <main>
+      <div id="imageDraw" class="center">
+        <canvas id="canvas" width="400" height="400"></canvas>
+      </div>
+
+      <div id="container" class="outline-panel center">
+        <div id="menu" class="panel center">
+          <div class="center">
+            <span id="text-zoom" class="text option">Zoom 100%</span>
+            <input id="zoom" class="slider" type="range" min="100" max="200" value="100">
+          </div>
+          <div class="center">
+            <span id="text-opacity" class="text option">Opacity 100%</span>
+            <input id="opacity" class="slider" type="range" min="0" max="100" value="100">
+          </div>
+          <div class="center">
+            <input id="uploader" hidden type="file">
+            <input id="clear" hidden type="button">
+            <input id="scale" type="checkbox" name="scale" hidden>
+            <label for="scale" class="text button">Scale</label>
+            <label class="text button" for="uploader">Upload</label>
+            <a id="download" class="text button">Save</a>
+            <label class="text button" for="clear">Clear</label>
+          </div>
+          <div id="info" class="center text">W up | A left | S dowm | D right</div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="outline-panel center">
+      <div id="footer-panel" class="panel text footer-text">
+        <a class="text footer-text url" href="https://github.com/vNear/Terraria-Grid">Github</a> ||
+        <a class="text footer-text url" href="https://store.steampowered.com/app/105600/Terraria/">Steam Page</a> ||
+        <a class="text footer-text url" href="https://terraria.fandom.com/wiki/Terraria_Wiki">Wiki</a> ||
+        Terraria is developed by <a class="text footer-text url"href="https://re-logic.com/">Re-Logic</a>
+      </div>
+    </footer>
+ </body>
+</html>
